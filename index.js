@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs"); 
+const { Shape, Circle, Square, Triangle } = require("./shapes")
 
 inquirer.prompt([
   {
@@ -33,3 +34,4 @@ inquirer.prompt([
   err ? console.log(err) : console.log('Your logo has been successfully created!')
   );
 })
+
