@@ -7,3 +7,4 @@ The objective of this project is to create an SVG logo-maker. This is done by us
 ## Video Link
 
 ## Screenshot
+
