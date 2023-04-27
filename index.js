@@ -33,7 +33,13 @@ inquirer
     const shapeString = newShape.buildShape()
     const svgString = newShape.buildSVG(shapeString)
     console.log(svgString)
+
     // Use the fs module to take in the string and use the info to generate the svg file
+    const fileName = 'logo.svg'
+
+    fs.writeFile(fileName, newShape.buildSVG(shapeString), (err) =>
+    err ? console.log(err) : console.log('Your SVG file has been successfully created!')
+    );
   })
 
 

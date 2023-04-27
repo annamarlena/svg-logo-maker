@@ -24,14 +24,13 @@ class Shape {
     if (this.chosenShape == "circle") {
       return `<circle cx="150" cy="100" r="80" fill="${this.shapeColor}" />`;
     } else if (this.chosenShape == "square") {
-      return ` <rect x="10" y="10" width="30" height="30" fill="${this.shapeColor}"/>`;
+      return ` <rect x="90" y="40" width="120" height="120" fill="${this.shapeColor}"/>`;
     } else {
-      return `<polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+      return `<polygon points="150, 18 244, 182 56, 182"
     fill="${this.shapeColor}"/>`;
     }
   }
 }
 
-//const logo = new logo( )
 
 module.exports = Shape;
