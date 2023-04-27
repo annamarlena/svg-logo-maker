@@ -1,7 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs"); 
-// const { Shape, Circle, Square, Triangle } = require("./shapes")
+const Shape = require("./shapes")
 
+// Ask initial questions 
 inquirer
   .prompt([
     {
@@ -28,7 +29,11 @@ inquirer
   ])
 
   .then((response) => {
-    console.log(response)
+    const newShape = new Shape(response.chars, response.textColor, response.chosenShape, response.shapeColor)
+    const shapeString = newShape.buildShape()
+    const svgString = newShape.buildSVG(shapeString)
+    console.log(svgString)
+    // Use the fs module to take in the string and use the info to generate the svg file
   })
 
 
