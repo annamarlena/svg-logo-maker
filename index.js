@@ -38,7 +38,7 @@ inquirer
     const fileName = 'logo.svg'
 
     fs.writeFile(fileName, newShape.buildSVG(shapeString), (err) =>
-    err ? console.log(err) : console.log('Your SVG file has been successfully created!')
+    err ? console.log(err) : console.log("Generated log.svg")
     );
   })
 
