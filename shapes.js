@@ -1,4 +1,4 @@
-// Takes the user input for the shape
+// Class that takes the user input for the shape
 class Shape {
   constructor(chars, textColor, chosenShape, shapeColor) {
     this.chars = chars;
