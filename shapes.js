@@ -1,6 +1,3 @@
-const inquirer = require("inquirer");
-const fs = require("fs");
-
 // Takes the user input for the shape
 class Shape {
   constructor(chars, textColor, chosenShape, shapeColor) {
@@ -12,12 +9,7 @@ class Shape {
   // method
   buildSVG(shapeParam) {
     // return a template literal that is the svg tag
-    return `
-    <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    ${shapeParam}
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.chars}</text>
-    </svg>
-    `;
+    return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">${shapeParam}<text x="150" y="125" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.chars}</text></svg>`;
   }
 
   buildShape() {
@@ -31,14 +23,5 @@ class Shape {
     }
   }
 }
-
-class Circle extends Shape {
-  constructor(){
-    
-  }
-}
-
-
-
 
 module.exports = Shape;

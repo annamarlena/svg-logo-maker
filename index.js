@@ -9,6 +9,13 @@ inquirer
       type: 'input',
       message: 'Please enter up to three characters for your logo',
       name: 'chars',
+      validate: function(chars){
+        if (chars.length > 3) {
+          return "Too many characters"
+        } else {
+          return true
+        }
+      }
     },
     {
       type: 'input',
@@ -27,12 +34,10 @@ inquirer
       name: 'shapeColor',
     },
   ])
-
   .then((response) => {
+    // Build the svg string
     const newShape = new Shape(response.chars, response.textColor, response.chosenShape, response.shapeColor)
     const shapeString = newShape.buildShape()
-    const svgString = newShape.buildSVG(shapeString)
-    console.log(svgString)
 
     // Use the fs module to take in the string and use the info to generate the svg file
     const fileName = 'logo.svg'
