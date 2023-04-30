@@ -8,7 +8,5 @@ The objective of this project is to create an SVG logo-maker. This is done by us
 
 Open [https://drive.google.com/file/d/1iPKNd465v7y2VzJexOfaxquzi0k0rxTt/view](https://drive.google.com/file/d/1iPKNd465v7y2VzJexOfaxquzi0k0rxTt/view) to watch the video demonstration.
 
-## Screenshot
 
-![Screenshot of the finished logo from the video] (./assets/images/logoscreenshot.png)
 
