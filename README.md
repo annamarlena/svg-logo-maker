@@ -11,5 +11,5 @@ Open [https://drive.google.com/file/d/1iPKNd465v7y2VzJexOfaxquzi0k0rxTt/view](ht
 
 ## Screenshot
 
-![Here's a screenshot of a sample logo](../assets/images/logoscreenshot.png)
+![Here's a screenshot of a sample logo](/assets/images/logoscreenshot.png)
 
